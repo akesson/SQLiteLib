@@ -59,6 +59,10 @@ SQLITE_OUTPUT_DIR="${BUILD_DIR}/sqlite"
 mkdir -p "${SQLITE_OUTPUT_DIR}"
 echo "Copying sqlite3.c to ${SQLITE_OUTPUT_DIR}/sqlite3.c"
 cp ./sqlite3.c "${SQLITE_OUTPUT_DIR}/sqlite3.c"
+
+echo "Copying sqlite3.c to ${PROJECT_DIR}/sqlite3.c"
+cp ./sqlite3.c "${PROJECT_DIR}/sqlite3.c"
+
 echo "Copying sqlite3.h to ${PROJECT_DIR}/sqlite3.h"
 cp ./sqlite3.h "${PROJECT_DIR}/sqlite3.h"
 if [ "$hasSEE" = true ] ;
